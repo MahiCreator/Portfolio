@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arjilli Maheswari | Web Developer</title>
+<meta name="description" content="Portfolio of Arjilli Maheswari, B.Tech CSE (AI & ML) student seeking a Web Developer role.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14121c;
+    --surface: #1d1a29;
+    --line: #342f47;
+    --text: #ece8f5;
+    --muted: #a59fb8;
+    --accent: #b9a7e8;
+    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ink);
+    background-image: radial-gradient(60rem 28rem at 15% -8%, #2a2145 0%, transparent 60%);
+    background-repeat: no-repeat;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  header { padding: 4.5rem 0 2.5rem; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(2.8rem, 9vw, 4.6rem); line-height: 1.05; letter-spacing: 0.01em; }
+  .role { font-family: var(--serif); font-size: clamp(1.3rem, 4vw, 1.7rem); color: var(--accent); margin-top: 0.6rem; }
+  .intro { color: var(--muted); max-width: 34rem; margin-top: 1.2rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; margin-top: 1.4rem; }
+
+  nav { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; padding-top: 0.7rem; padding-bottom: 0.7rem; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { color: var(--text); }
+
+  section { padding: 2.6rem 0 0.4rem; }
+  h2 { font-family: var(--serif); font-weight: 600; font-size: 1.9rem; margin-bottom: 0.9rem; }
+  h3 { font-size: 1.05rem; font-weight: 500; }
+  p + p { margin-top: 0.8rem; }
+
+  .skills { display: grid; gap: 0.7rem; }
+  .skills div { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.2rem 1rem; }
+  .skills dt { color: var(--muted); }
+
+  .project { border-left: 2px solid var(--accent); background: var(--surface); padding: 1.1rem 1.3rem; border-radius: 0 10px 10px 0; }
+  .project + .project { margin-top: 1.1rem; }
+  .project ul { margin: 0.5rem 0 0.6rem 1.1rem; color: var(--muted); }
+  .project .tools { font-size: 0.92rem; }
+  .tag { display: inline-block; color: var(--muted); font-size: 0.85rem; margin-left: 0.4rem; }
+
+  ul.plain { list-style: none; }
+  ul.plain li { padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
+  ul.plain li:last-child { border-bottom: 0; }
+  .sub { color: var(--muted); font-size: 0.95rem; }
+
+  footer { margin-top: 3rem; border-top: 1px solid var(--line); padding: 1.6rem 0 3rem; color: var(--muted); font-size: 0.92rem; }
+
+  @media (max-width: 520px) {
+    header { padding-top: 3rem; }
+    .skills div { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Arjilli Maheswari</h1>
+    <p class="role">Aspiring Web Developer</p>
+    <p class="intro">Final-year B.Tech Computer Science and Engineering (AI &amp; ML) student. I build with HTML, CSS, JavaScript and Python, and I am looking for a full-time web developer role where I can learn on real projects.</p>
+    <div class="links">
+      <a href="mailto:maheswariarjilli1320@gmail.com">Email</a>
+      <a href="https://github.com/MahiCreator/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/maheswari-arjilli-37125b321" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Web</dt><dd>HTML, CSS, JavaScript (basics)</dd></div>
+      <div><dt>Languages</dt><dd>Python, C</dd></div>
+      <div><dt>Tools</dt><dd>Git, GitHub, VS Code</dd></div>
+      <div><dt>AI and data</dt><dd>Machine learning fundamentals, computer vision, object detection, generative AI, data preprocessing, exploratory data analysis</dd></div>
+    </dl>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>YOLOv8 object detection <span class="tag">Team project</span></h3>
+      <ul>
+        <li>Detects and locates objects in images using the YOLOv8 framework in Python.</li>
+        <li>Covers image preprocessing, model inference and reading detection results.</li>
+      </ul>
+      <p class="tools">Python, YOLOv8, computer vision</p>
+      <!-- EDIT: add one line about your own part, and a link to the code or demo if you have one -->
+    </article>
+
+    <article class="project">
+      <h3>Game playing using hand gestures <span class="tag">Team project</span></h3>
+      <ul>
+        <li>Controls a game in real time from webcam input by recognising hand gestures.</li>
+        <li>Maps each gesture to a game action using image processing.</li>
+      </ul>
+      <p class="tools">Python, computer vision, gesture recognition</p>
+      <!-- EDIT: add one line about your own part, and a link to the code or demo if you have one -->
+    </article>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul class="plain">
+      <li>GenAI Powered Data Analytics Job Simulation <span class="sub">Tata, via Forage</span></li>
+      <li>PyTech Arena Buildathon, beginner level <span class="sub">JNTU-GV, 27 to 28 February</span></li>
+      <li>Infosys Springboard <span class="sub">multiple courses</span></li>
+      <li>EduSkills <span class="sub">multiple certifications</span></li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="plain">
+      <li>B.Tech, Computer Science and Engineering (AI &amp; ML), 2023 to 2027<br><span class="sub">Avanthi Institute of Engineering and Technology, CGPA 72.4%</span></li>
+      <li>Intermediate (MPC), 2021 to 2023<br><span class="sub">KGBV S Rayavaram, 75.5%</span></li>
+      <li>SSC, 2021<br><span class="sub">KGBV S Rayavaram, 98%</span></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>The best way to reach me is by email at <a href="mailto:maheswariarjilli1320@gmail.com">maheswariarjilli1320@gmail.com</a>. You can also find me on <a href="https://www.linkedin.com/in/maheswari-arjilli-37125b321" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Arjilli Maheswari, Anakapalle, Andhra Pradesh</div>
+</footer>
+
+</body>
+</html>
